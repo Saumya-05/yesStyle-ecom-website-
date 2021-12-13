@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>About Us | YESSTYLE</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="favicon (1).ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/09fcbb93ec.js" crossorigin="anonymous"></script>"
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navigationbar">
+                <div class="logo">
+                    <img src="images\logoc.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="my cart.html"><img src="images\cart.png" width="30px" height="30px"></a>
+                <img src="images\menu.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+        </div>
+        </div>
+        <!----------------------about us---------------------->
+        <div class="About">
+            <div class="small-container">
+                <div class="contact-head">
+                    <h2>About Us</h2>
+                </div>
+                <div class="overview">
+                    <h2 class="title">Overview</h2>
+                    <p>YesStyle.com was launched in 2006 and is owned by YesAsia.com Ltd, a globally-recognized e-commerce company founded in 1998.<br>
+                        The company has since earned a wide range of recognition</p>
+                    <br>
+                    <h2 class="title">YesStyle Shipping</h2>
+                    <p>Our YesStyle review found that YesStyle shipping rates are both clearly stated and affordable, 
+                        making it easy to get Asian clothing online.<br>It also offers a free shipping option based on a minimum purchase amount.
+                        All prices given on their site are in U.S. dollars, as international exchange rates can vary. However, you can choose your currency preference at the top of the site for conversions.
+                    </p>
+                    <br>
+                    <h2 class="title">YesStyle Return Policy </h2>
+                    <p>The YesStyle return policy differs from one item to the next, since not all items will be eligible for size exchanges or unwanted item returns.
+                        According to the YesStyle return policy, all eligible return requests must be submitted to customer service within 14 days after the product is received.<br> 
+                        Shoppers have a total of 30 days after requesting a Return Merchandise Authorization (RMA) to ship their return.
+                        One way that this retailer stands out from other sites like YesStyle is that they offer local return shipping to certain countries. A complaint of many other Asian online retailers is that shoppers have to pay high shipping rates back to China, but that’s not always the case with YesStyle.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!----------------------footer------------------------>
+        <div class="footer">
+            <div class="container" style="max-width: 1500px;">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>THE YESSTYLE APP</h3>
+                        <a href="https://www.yesstyle.com/en/app">
+                            <img src="images/app.png" width="200px" style="padding-top: 5px; padding-bottom: 15px">
+                        </a>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>FOLLOW YESSTYLE ON</h3>
+                        <ul style="padding-bottom: 6px">
+                            <li><a href="https://www.facebook.com/YesStyle/"><img src="images/facebook.png" width="55px" height="55px"></a></li>
+                            <li><a href="https://twitter.com/yesstyle"><img src="images/twitter.png" width="55px" height="55px"></a></li>
+                            <li><a href="https://www.pinterest.com/yesstyle/"><img src="images/pinterest.png" width="55px" height="55px"></a></li>
+                            <li><a href="https://www.instagram.com/yesstyle/"><img src="images/instagram.png" width="55px" height="55px"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="">Terms Of Use</a></li>
+                            <li><a href="">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <div class="subrow">
+                          <div class="box one">
+                            <img src="images/original.png" width="80px">
+                          </div>
+                          
+                          <div class="box two">
+                            <p><span style="font-size: 15px; font-weight: bolder">100% ORIGINAL </span><span style="color: grey">guarantee<br>for all products at Yesstyle.com</span></p>
+                          </div>
+                        </div>
+                        
+                        <div class="subrow">
+                          <div class="box one">
+                            <img src="images/return.png" width="80px">
+                          </div>
+                          
+                          <div class="box two">
+                            <p><span style="font-size: 15px; font-weight: bolder">Return within 30 days</span><br><span style="color: grey"> from receiving your order</span></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright © 2006-2021 YESSTYLE.COM LTD. All rights reserved.</p>
+            </div>
+        </div>
+        <!---------------------js for toggle menu------------------------>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
